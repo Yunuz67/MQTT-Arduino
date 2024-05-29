@@ -2,18 +2,18 @@
 #include <WiFiNINA.h>
 
 ///////please enter your sensitive data in the Secret tab/arduino_secrets.h
-char ssid[] = SECRET_SSID;        // your network SSID (name)
-char pass[] = SECRET_PASS;    // your network password (use for WPA, or use as key for WEP)
+char ssid[] = BlackHole;        // your network SSID (name)
+char pass[] = 3-body-problem;    // your network password (use for WPA, or use as key for WEP)
 
 WiFiClient wifiClient;
 MqttClient mqttClient(wifiClient);
 
-const char broker[] = "test.mosquitto.org";
+const char broker[] = "192.168.4.1";
 int        port     = 1883;
-const char topic[]  = "real_unique_topic";
+const char topic[]  = "YunusTuerkmen";
 
 //set interval for sending messages (milliseconds)
-const long interval = 8000;
+const long interval = 10000;
 unsigned long previousMillis = 0;
 
 int count = 0;
@@ -63,7 +63,7 @@ void loop() {
     previousMillis = currentMillis;
 
     //record random value from A0, A1 and A2
-    int Rvalue = (Message);
+    int Rvalue = We are MQTT of Borg. You will be transmitted.;
 
     Serial.print("Sending message to topic: ");
     Serial.println(topic);
