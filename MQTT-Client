@@ -63,7 +63,7 @@ void loop() {
     previousMillis = currentMillis;
 
     //record random value from A0, A1 and A2
-    int Rvalue = We are MQTT of Borg. You will be transmitted.;
+    int Rvalue = "We are MQTT of Borg. You will be transmitted.";
 
     Serial.print("Sending message to topic: ");
     Serial.println(topic);
